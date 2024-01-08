@@ -3,7 +3,7 @@ mod impls;
 mod macros;
 pub mod utils;
 
-pub use pxr::{make_string, pxr, ToCppString};
+pub use ::pxr::{make_string, pxr, ToCppString};
 
 pub use ffi::bindings::{
     carb,
