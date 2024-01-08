@@ -1,0 +1,43 @@
+[package]
+name = "omniverse_sys"
+authors.workspace = true
+categories.workspace = true
+description.workspace = true
+edition.workspace = true
+keywords.workspace = true
+license.workspace = true
+readme.workspace = true
+repository.workspace = true
+rust-version.workspace = true
+version.workspace = true
+links = "carb"
+
+[dependencies]
+autocxx = { workspace = true }
+builder_derive_more = { workspace = true }
+cpp = { workspace = true }
+cxx = { workspace = true }
+derive_builder = { workspace = true }
+once_cell = { workspace = true }
+pxr = { workspace = true }
+thiserror = { workspace = true }
+
+[build-dependencies]
+anyhow = { workspace = true }
+autocxx-build = { workspace = true }
+bindgen = { workspace = true }
+built_different = { workspace = true }
+cpp_build = { workspace = true }
+pxr_sys = { workspace = true }
+python-config-rs = { workspace = true }
+urlencoding = { workspace = true }
+walkdir = { workspace = true }
+
+[features]
+default = ["vendored"]
+vendored = []
+
+[lib]
+name = "omniverse_sys"
+path = "src/lib.rs"
+crate-type = ["rlib"]

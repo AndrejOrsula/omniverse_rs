@@ -1,0 +1,27 @@
+[package]
+name = "omniverse"
+authors.workspace = true
+categories.workspace = true
+description.workspace = true
+edition.workspace = true
+keywords.workspace = true
+license.workspace = true
+readme.workspace = true
+repository.workspace = true
+rust-version.workspace = true
+version.workspace = true
+
+[dependencies]
+thiserror = { workspace = true }
+omniverse_sys = { workspace = true }
+ctor = { workspace = true }
+semver = { workspace = true }
+
+[features]
+default = ["vendored"]
+vendored = ["omniverse_sys/vendored"]
+
+[lib]
+name = "omniverse"
+path = "src/lib.rs"
+crate-type = ["rlib"]

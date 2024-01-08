@@ -1,0 +1,77 @@
+--- ./omni/usd/UsdContext.h
++++ ./omni/usd/UsdContext.h
+@@ -18,8 +18,8 @@
+ #include <omni/usd/Api.h>
+ #include <omni/usd/UsdTypes.h>
+ #include <omni/usd/ViewportTypes.h>
+-#include <omni/usd/IUsdMutex.h>
+-#include <omni/usd-abi/IPathAbi.h>
++// #include <omni/usd/IUsdMutex.h>
++// #include <omni/usd-abi/IPathAbi.h>
+
+ #include <memory>
+
+@@ -70,7 +70,7 @@
+
+ namespace usd
+ {
+-typedef std::unordered_set<PXR_NS::SdfPath, PXR_NS::SdfPath::Hash> SdfPathUSet;
++// typedef std::unordered_set<PXR_NS::SdfPath, PXR_NS::SdfPath::Hash> SdfPathUSet;
+
+ class Selection;
+ struct Layers;
+@@ -88,7 +88,7 @@
+ struct EngineCreationConfig;
+ enum class EngineCreationFlags : uint32_t;
+
+-OMNI_DECLARE_INTERFACE(IViewOverrideBase);
++// OMNI_DECLARE_INTERFACE(IViewOverrideBase);
+ }
+
+ namespace audio
+@@ -591,7 +591,7 @@
+      * @param primPath Prim path
+      * @param renderablePathSet An unordered output path set.
+      */
+-    OMNI_USD_API void getRenderablePaths(PXR_NS::SdfPath primPath, SdfPathUSet& unOrderedRenderablePathSet);
++    // OMNI_USD_API void getRenderablePaths(PXR_NS::SdfPath primPath, SdfPathUSet& unOrderedRenderablePathSet);
+
+     /**
+      * Returns all renderable paths for given prim path and its descendatns.
+@@ -700,9 +700,9 @@
+      * The ViewportHandle and the RenderProduct USD Prim Path to render
+      *
+      */
+-    OMNI_USD_API void addRender(ViewportHandle handle,
+-                                omni::usd::PathH renderProductPrimPath,
+-                                const Picking* picking = nullptr);
++    // OMNI_USD_API void addRender(ViewportHandle handle,
++    //                             omni::usd::PathH renderProductPrimPath,
++    //                             const Picking* picking = nullptr);
+
+     /**
+      * Gets Selection instance.
+@@ -846,12 +846,12 @@
+     /**
+      * Allow for viewoverrides to be added through the usd context
+      */
+-    OMNI_USD_API void registerViewOverrideToHydraEngines(omni::usd::hydra::IViewOverrideBase* viewOverride);
++    // OMNI_USD_API void registerViewOverrideToHydraEngines(omni::usd::hydra::IViewOverrideBase* viewOverride);
+
+     /**
+      * Allow for viewoverrides to be removed through the usd context
+      */
+-    OMNI_USD_API void unregisterViewOverrideToHydraEngines(omni::usd::hydra::IViewOverrideBase* viewOverride);
++    // OMNI_USD_API void unregisterViewOverrideToHydraEngines(omni::usd::hydra::IViewOverrideBase* viewOverride);
+
+     /**
+      * Allow scheduling override to be set for usd context
+@@ -866,7 +866,7 @@
+     /**
+      * Retrieves the mutex for `*this`
+      */
+-    OMNI_USD_API IUsdMutex& getMutex();
++    // OMNI_USD_API IUsdMutex& getMutex();
+
+     /**
+      * Stop any picking in flight for a specific View

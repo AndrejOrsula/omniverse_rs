@@ -1,0 +1,55 @@
+[workspace]
+members = [
+    # Rust interface for Omniverse
+    "omniverse",
+    # Unsafe Rust bindings for Omniverse
+    "omniverse_sys",
+]
+resolver = "2"
+
+[workspace.package]
+authors = ["Andrej Orsula <orsula.andrej@gmail.com>"]
+categories = ["simulation"]
+description = "Rust interface for Omniverse"
+edition = "2021"
+keywords = ["omniverse", "usd", "vfx", "simulation"]
+license = "MIT OR Apache-2.0"
+readme = "README.md"
+repository = "https://github.com/AndrejOrsula/omniverse_rs"
+rust-version = "1.70"
+version = "0.1.0"
+
+[workspace.dependencies]
+omniverse_sys = { path = "omniverse_sys", version = "0.1.0" }
+
+anyhow = { version = "1.0" }
+autocxx = { version = "0.26" }
+autocxx-build = { version = "0.26" }
+bindgen = { version = "0.69" }
+builder_derive_more = { version = "0.1" }
+built_different = { version = "0.1" }
+cpp = { version = "0.5" }
+cpp_build = { version = "0.5" }
+ctor = { version = "0.2" }
+cxx = { version = "1.0", default_features = false, features = ["std", "c++17"] }
+cxxbridge-flags = { version = "1.0", default_features = false }
+derive_builder = { version = "0.12" }
+once_cell = { version = "1.18.0" }
+pxr = { version = "0.1.1" }
+pxr_sys = { version = "0.1.1" }
+python-config-rs = { version = "0.1" }
+semver = { version = "1" }
+thiserror = { version = "1.0" }
+urlencoding = { version = "2" }
+walkdir = { version = "2" }
+
+
+[patch.crates-io]
+# Until https://github.com/rust-lang/rust-bindgen/pull/2423 is merged into autocxx-bindgen
+autocxx-bindgen = { git = "https://github.com/AndrejOrsula/autocxx_bindgen", branch = "fix_union_template" }
+# Adds `use_cxx11_abi` feature that allows enabling/disabling CXX11 ABI during compilation (for C++ std::string compatibility)
+cxx = { git = "https://github.com/AndrejOrsula/cxx", branch = "dev_pxr" }
+# (ugly hack) Includes hardcoded allowlist for double underscore identifiers - __pxrReserved__ namespace
+cxx-gen = { git = "https://github.com/AndrejOrsula/cxx", branch = "dev_pxr" }
+# (ugly hack) Includes hardcoded allowlist for double underscore identifiers - __pxrReserved__ namespace
+autocxx-engine = { git = "https://github.com/AndrejOrsula/autocxx", branch = "dev_pxr" }

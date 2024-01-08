@@ -1,0 +1,11 @@
+--- ./omni/usd/UsdUtils.h
++++ ./omni/usd/UsdUtils.h
+@@ -22,7 +22,7 @@
+ #include <carb/extras/StringUtils.h>
+ #include <carb/filesystem/IFileSystem.h>
+ #include <carb/logging/Log.h>
+-#include <carb/omniclient/OmniClientUtils.h>
++// #include <carb/omniclient/OmniClientUtils.h>
+ #include <carb/profiler/Profile.h>
+ #include <carb/settings/ISettings.h>
+

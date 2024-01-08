@@ -1,0 +1,25 @@
+--- ./omni/usd/UsdManager.h
++++ ./omni/usd/UsdManager.h
+@@ -47,9 +47,9 @@
+
+ namespace hydra
+ {
+-class IHydraEngineFactory;
++// class IHydraEngineFactory;
+ enum class EngineCreationFlags : uint32_t;
+-using IHydraEngineFactoryPtr = carb::ObjectPtr<IHydraEngineFactory>;
++// using IHydraEngineFactoryPtr = carb::ObjectPtr<IHydraEngineFactory>;
+ struct OpaqueSharedHydraEngineContext;
+ typedef struct OpaqueSharedHydraEngineContext* OpaqueSharedHydraEngineContextPtr;
+
+@@ -105,8 +105,8 @@
+      * Use by IHydraEngines at load/unload to register their factory class
+      *
+      */
+-    OMNI_USD_API static void registerHydraEngineFactory(const char* name,
+-                                                        omni::usd::hydra::IHydraEngineFactoryPtr factory);
++    // OMNI_USD_API static void registerHydraEngineFactory(const char* name,
++    //                                                     omni::usd::hydra::IHydraEngineFactoryPtr factory);
+
+     OMNI_USD_API static void unregisterHydraEngineFactory(const char* name);
+
