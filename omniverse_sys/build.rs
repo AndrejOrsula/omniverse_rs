@@ -173,7 +173,7 @@ fn main() {
     println!("cargo:rerun-if-env-changed=CARB_APP_PATH");
 
     // Get path to the OpenUSD installation
-    let openusd_path = pxr_sys::openusd_path();
+    let openusd_path = pxr::openusd_path();
     // Verify that the OpenUSD installation contains the required subdirectories
     for path in INCLUDE_PATHS_OPENUSD {
         let path = std::path::PathBuf::from(path);

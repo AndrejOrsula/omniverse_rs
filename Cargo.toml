@@ -36,7 +36,6 @@ cxxbridge-flags = { version = "1.0", default_features = false }
 derive_builder = { version = "0.12" }
 once_cell = { version = "1.18.0" }
 pxr = { version = "0.1.1" }
-pxr_sys = { version = "0.1.1" }
 python-config-rs = { version = "0.1" }
 semver = { version = "1" }
 thiserror = { version = "1.0" }

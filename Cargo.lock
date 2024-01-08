@@ -1147,7 +1147,6 @@ dependencies = [
  "derive_builder",
  "once_cell",
  "pxr",
- "pxr_sys",
  "python-config-rs",
  "thiserror",
  "urlencoding",
