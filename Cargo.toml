@@ -17,10 +17,10 @@ license = "MIT OR Apache-2.0"
 readme = "README.md"
 repository = "https://github.com/AndrejOrsula/omniverse_rs"
 rust-version = "1.70"
-version = "0.1.0"
+version = "0.1.1"
 
 [workspace.dependencies]
-omniverse_sys = { path = "omniverse_sys", version = "0.1.0" }
+omniverse_sys = { path = "omniverse_sys", version = "0.1.1" }
 
 anyhow = { version = "1.0" }
 autocxx = { version = "0.26" }
@@ -34,9 +34,8 @@ ctor = { version = "0.2" }
 cxx = { version = "1.0", default_features = false, features = ["std", "c++17"] }
 cxxbridge-flags = { version = "1.0", default_features = false }
 derive_builder = { version = "0.12" }
-once_cell = { version = "1.18.0" }
-pxr = { version = "0.1.1" }
-pxr_sys = { version = "0.1.1" }
+once_cell = { version = "1.18" }
+pxr = { version = "0.1" }
 python-config-rs = { version = "0.1" }
 semver = { version = "1" }
 thiserror = { version = "1.0" }

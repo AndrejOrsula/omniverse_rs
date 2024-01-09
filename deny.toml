@@ -12,7 +12,7 @@ notice = "deny"
 unmaintained = "warn"
 unsound = "deny"
 vulnerability = "deny"
-yanked = "warn"
+yanked = "deny"
 ignore = [
     # On windows, `atty` dereferences a potentially unaligned pointer.
     # However, this crate does not target windows.
