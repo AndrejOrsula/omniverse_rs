@@ -17,10 +17,10 @@ license = "MIT OR Apache-2.0"
 readme = "README.md"
 repository = "https://github.com/AndrejOrsula/omniverse_rs"
 rust-version = "1.70"
-version = "0.1.0"
+version = "0.1.1"
 
 [workspace.dependencies]
-omniverse_sys = { path = "omniverse_sys", version = "0.1.0" }
+omniverse_sys = { path = "omniverse_sys", version = "0.1.1" }
 
 anyhow = { version = "1.0" }
 autocxx = { version = "0.26" }
