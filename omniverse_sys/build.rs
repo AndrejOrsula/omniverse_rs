@@ -416,7 +416,7 @@ mod vendored {
 
         // ENV: Determine the version of Carbonite to download
         const DEFAULT_CARB_APP_DOWNLOAD_VERSION: &str =
-            "105.1+release.130815.04872a84.tc.linux-x86_64.release";
+            "105.1.2+release.133510.b82c1e1e.tc.linux-x86_64.release";
         println!("cargo:rerun-if-env-changed=CARB_APP_DOWNLOAD_VERSION");
         let carb_app_version_full = std::env::var("CARB_APP_DOWNLOAD_VERSION")
             .unwrap_or_else(|_| DEFAULT_CARB_APP_DOWNLOAD_VERSION.to_string());
