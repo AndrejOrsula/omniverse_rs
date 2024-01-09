@@ -43,6 +43,13 @@ omniverse = { git = "https://github.com/AndrejOrsula/omniverse_rs.git" }
 
 Note that the first build might take up to 1 hour because OpenUSD and Omniverse Kit will be automatically downloaded with the `vendored` feature enabled (most of the time is spent compiling OpenUSD). The artifacts will be cached in `OUT_DIR` and reused for subsequent builds.
 
+Alternatively, you can specify the paths to existing OpenUSD and Omniverse Kit installation directories via the following environment variables.
+
+```bash
+export OPENUSD_PATH=/path/to/pxr/openusd
+export CARB_APP_PATH=/path/to/omniverse/kit
+```
+
 It is highly recommended to use `lld` or `mold` linker because `ld` might currently fail.
 
 <details>
