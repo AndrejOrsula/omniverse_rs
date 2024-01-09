@@ -65,25 +65,25 @@ jobs:
 
       ## cargo check
       - name: cargo check
-        run: cargo check --workspace --all-targets --verbose
+        run: cargo check --release --workspace --all-targets --verbose
 
       ## cargo test
       - name: cargo test
-        run: cargo test --workspace --all-targets --verbose
+        run: cargo test --release --workspace --all-targets --verbose
 
       ## cargo test --doc
       - name: cargo test --doc
-        run: cargo test --workspace --doc --verbose
+        run: cargo test --release --workspace --doc --verbose
 
       ## [stable] cargo clippy
       - name: stable | cargo clippy
         if: ${{ matrix.toolchain == 'stable' }}
-        run: cargo clippy --workspace --all-targets --no-deps --verbose -- --deny warnings
+        run: cargo clippy --release --workspace --all-targets --no-deps --verbose -- --deny warnings
 
       ## [stable] cargo doc
       - name: stable | cargo doc --document-private-items
         if: ${{ matrix.toolchain == 'stable' }}
-        run: cargo doc --workspace --no-deps --document-private-items --verbose
+        run: cargo doc --release --workspace --no-deps --document-private-items --verbose
 
       ## [stable] Code coverage
       - name: stable | Install cargo llvm-cov for code coverage
@@ -92,7 +92,7 @@ jobs:
       ## [stable] Generate coverage with cargo llvm-cov
       - name: stable | Generate coverage
         if: ${{ matrix.toolchain == 'stable' }}
-        run: cargo llvm-cov --workspace --lcov --output-path lcov.info
+        run: cargo llvm-cov --release --workspace --lcov --output-path lcov.info
       ## [stable] Upload coverage to codecov.io
       - name: stable | Upload coverage
         if: ${{ matrix.toolchain == 'stable' }}
