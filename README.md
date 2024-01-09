@@ -61,6 +61,8 @@ It is highly recommended to use `lld` or `mold` linker because `ld` might curren
 > .docker/host/install_docker.bash
 > ```
 
+By running the Docker container, you are implicitly agreeing to the [NVIDIA Omniverse EULA](https://docs.omniverse.nvidia.com/platform/latest/common/NVIDIA_Omniverse_License_Agreement.html). If you do not agree to this license agreement, do not use this container.
+
 #### Build Image
 
 To build a new Docker image from [`Dockerfile`](Dockerfile), you can run [`.docker/build.bash`](.docker/build.bash) as shown below.
