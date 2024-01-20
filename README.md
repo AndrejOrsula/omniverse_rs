@@ -1,10 +1,13 @@
 # omniverse_rs
 
 <p align="left">
-  <a href="https://crates.io/crates/omniverse">                                        <img alt="crates.io" src="https://img.shields.io/crates/v/omniverse.svg"></a>
-  <a href="https://github.com/AndrejOrsula/omniverse_rs/actions/workflows/rust.yml">   <img alt="Rust"      src="https://github.com/AndrejOrsula/omniverse_rs/actions/workflows/rust.yml/badge.svg"></a>
-  <a href="https://github.com/AndrejOrsula/omniverse_rs/actions/workflows/docker.yml"> <img alt="Docker"    src="https://github.com/AndrejOrsula/omniverse_rs/actions/workflows/docker.yml/badge.svg"></a>
-  <a href="https://codecov.io/gh/AndrejOrsula/omniverse_rs">                           <img alt="codecov"   src="https://codecov.io/gh/AndrejOrsula/omniverse_rs/branch/main/graph/badge.svg"></a>
+  <a href="https://crates.io/crates/omniverse">                                        <img alt="crates.io"  src="https://img.shields.io/crates/v/omniverse.svg"></a>
+  <!-- <a href="https://docs.rs/omniverse">                                                 <img alt="docs.rs"    src="https://docs.rs/omniverse/badge.svg"></a> -->
+  <a href="https://github.com/AndrejOrsula/omniverse_rs/actions/workflows/rust.yml">   <img alt="Rust"       src="https://github.com/AndrejOrsula/omniverse_rs/actions/workflows/rust.yml/badge.svg"></a>
+  <a href="https://github.com/AndrejOrsula/omniverse_rs/actions/workflows/docker.yml"> <img alt="Docker"     src="https://github.com/AndrejOrsula/omniverse_rs/actions/workflows/docker.yml/badge.svg"></a>
+  <a href="https://deps.rs/repo/github/AndrejOrsula/omniverse_rs">                     <img alt="deps.rs"    src="https://deps.rs/repo/github/AndrejOrsula/omniverse_rs/status.svg"></a>
+  <a href="https://codecov.io/gh/AndrejOrsula/omniverse_rs">                           <img alt="codecov.io" src="https://codecov.io/gh/AndrejOrsula/omniverse_rs/branch/main/graph/badge.svg"></a>
+
 </p>
 
 Rust interface for NVIDIA [Omniverse](https://www.nvidia.com/en-us/omniverse).
