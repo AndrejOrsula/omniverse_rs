@@ -29,7 +29,6 @@ bindgen = { workspace = true }
 built_different = { workspace = true }
 cpp_build = { workspace = true }
 pxr = { workspace = true }
-python-config-rs = { workspace = true }
 urlencoding = { workspace = true }
 walkdir = { workspace = true }
 
