@@ -14,7 +14,7 @@ concurrency:
   cancel-in-progress: true
 
 env:
-  MSRV: "1.75"
+  MSRV: "1.70"
   CARGO_TERM_COLOR: always
   SYS_LIB_PACKAGE_NAME: omniverse_sys
   LIB_PACKAGE_NAME: omniverse
@@ -43,6 +43,16 @@ jobs:
           - stable
           - beta
     steps:
+      ## Free up space by removing unnecessary files
+      - name: Maximize build space
+        uses: AdityaGarg8/remove-unwanted-software@v3
+        with:
+          remove-android: "true"
+          remove-codeql: "true"
+          remove-docker-images: "true"
+          remove-dotnet: "true"
+          remove-haskell: "true"
+
       - uses: actions/checkout@v4
       - uses: Swatinem/rust-cache@v2
         with:

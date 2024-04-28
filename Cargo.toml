@@ -16,7 +16,7 @@ keywords = ["omniverse", "usd", "vfx", "simulation"]
 license = "MIT OR Apache-2.0"
 readme = "README.md"
 repository = "https://github.com/AndrejOrsula/omniverse_rs"
-rust-version = "1.75"
+rust-version = "1.70"
 version = "0.2.0"
 
 [workspace.dependencies]

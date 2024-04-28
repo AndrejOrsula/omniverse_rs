@@ -115,7 +115,7 @@ RUN apt-get update && \
     rm -rf /var/lib/apt/lists/*
 
 ### Install Rust
-ARG RUST_VERSION="1.75"
+ARG RUST_VERSION="1.77"
 RUN apt-get update && \
     DEBIAN_FRONTEND=noninteractive apt-get install -yq --no-install-recommends \
     ca-certificates \
