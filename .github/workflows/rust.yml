@@ -14,7 +14,7 @@ concurrency:
   cancel-in-progress: true
 
 env:
-  MSRV: "1.70"
+  MSRV: "1.75"
   CARGO_TERM_COLOR: always
   SYS_LIB_PACKAGE_NAME: omniverse_sys
   LIB_PACKAGE_NAME: omniverse

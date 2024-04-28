@@ -37,11 +37,9 @@ The complete list of dependencies can be found within [`Dockerfile`](Dockerfile)
 
 Add `omniverse` as a Rust dependency to your [`Cargo.toml`](https://doc.rust-lang.org/cargo/reference/manifest.html) manifest.
 
-<!-- TODO[doc]: Update Cargo.toml dependency once the package can be reliably used from https://crates.io -->
-
 ```toml
 [dependencies]
-omniverse = { git = "https://github.com/AndrejOrsula/omniverse_rs.git" }
+omniverse = { version = "0.2" }
 ```
 
 Note that the first build might take up to 1 hour because OpenUSD and Omniverse Kit will be automatically downloaded with the `vendored` feature enabled (most of the time is spent compiling OpenUSD). The artifacts will be cached in `OUT_DIR` and reused for subsequent builds.
