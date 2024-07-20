@@ -45,7 +45,7 @@ jobs:
     steps:
       ## Free up space by removing unnecessary files
       - name: Maximize build space
-        uses: AdityaGarg8/remove-unwanted-software@v3
+        uses: AdityaGarg8/remove-unwanted-software@v4
         with:
           remove-android: "true"
           remove-codeql: "true"
