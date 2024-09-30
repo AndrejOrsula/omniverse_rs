@@ -34,7 +34,7 @@ ctor = { version = "0.2" }
 cxx = { version = "1.0", default_features = false, features = ["std", "c++17"] }
 cxxbridge-flags = { version = "1.0", default_features = false }
 derive_builder = { version = "0.20" }
-once_cell = { version = "1.18" }
+once_cell = { version = "1.20" }
 pxr = { version = "0.2" }
 semver = { version = "1" }
 thiserror = { version = "1.0" }
